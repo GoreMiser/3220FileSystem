@@ -1,0 +1,16 @@
+William Newberry
+Peter Keyser
+notjustcats project 4
+
+
+Design:
+We bring in the FAT image and go through it. Then I search the root directory. While doing that, I go through each entry in the directory I find. If it is not deleted and not a directory, I search treat it as a file(printing out the stuff for the autograder). If it is a directory, I treat it as such and search for it. If it is deleted, I attempt to recover it.
+
+I have various functions to assist with this. The main of these is recoverFile(), searchDir(), and findFile() (each named respectively after what they attempt to do ie recover a file, search a directory, and find a file in a directory)
+
+Assisting functions are getFileName() and swapBits(). These functions are helpers, one to get the file name and one to help swap the bits sine we're working with 12(still a weird number)
+
+At the top I have an archetype for a file that has the necessary variables to assist me with where to send it to handle it.
+
+ 
+
